@@ -109,16 +109,16 @@ WebScraperApp/<br>
 ---
 
 ## 🔍 Understanding How It Works
-- 1️⃣ Frontend UI
-- → Displays data and user controls using HTML/CSS/JS
-- 2️⃣ Flask Backend
-- → Handles /api/scrape, /api/data, /api/download routes
-- 3️⃣ Scraper Module (scraper.py)
-- → Sends HTTP requests and parses the HTML
-- → Extracts required fields
-- 4️⃣ Data Handler (data_handler.py)
-- → Saves extracted results into scraped_data.csv
-- → Reads existing CSV data when reloading page
+1️⃣ Frontend UI<br>
+→ Displays data and user controls using HTML/CSS/JS<br>
+2️⃣ Flask Backend<br>
+→ Handles /api/scrape, /api/data, /api/download routes<br>
+3️⃣ Scraper Module (scraper.py)<br>
+→ Sends HTTP requests and parses the HTML<br>
+→ Extracts required fields<br>
+4️⃣ Data Handler (data_handler.py)<br>
+→ Saves extracted results into scraped_data.csv<br>
+→ Reads existing CSV data when reloading page<br>
 
 ---
 
