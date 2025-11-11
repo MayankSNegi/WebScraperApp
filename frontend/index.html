@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebScraperApp - Book Scraper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📚 WebScraperApp</h1>
+            <p>Extract and manage book data from <a href="https://books.toscrape.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white; transition: all 0.3s ease;" onmouseover="this.style.textShadow='0 0 8px white';" onmouseout="this.style.textShadow='none';"> books.toscrape.com</a></p>
+        </header>
+
+        <div class="controls">
+            <button id="scrapeBtn" class="btn btn-primary">
+                🔄 Start Scraping
+            </button>
+            <button id="downloadBtn" class="btn btn-secondary" disabled>
+                📥 Download CSV
+            </button>
+        </div>
+
+        <div id="status" class="status-message"></div>
+
+        <div id="loadingSpinner" class="spinner hidden"></div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Books</h3>
+                <p id="totalBooks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Last Updated</h3>
+                <p id="lastUpdated">Never</p>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2>Scraped Books</h2>
+            <div id="tableWrapper" class="table-wrapper">
+                <table id="dataTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Availability</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr class="empty-row">
+                            <td colspan="5">No data available. Click "Start Scraping" to begin.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
