@@ -109,16 +109,16 @@ WebScraperApp/<br>
 ---
 
 ## 🔍 Understanding How It Works
-1️⃣ Frontend UI
-→ Displays data and user controls using HTML/CSS/JS
-2️⃣ Flask Backend
-→ Handles /api/scrape, /api/data, /api/download routes
-3️⃣ Scraper Module (scraper.py)
-→ Sends HTTP requests and parses the HTML
-→ Extracts required fields
-4️⃣ Data Handler (data_handler.py)
-→ Saves extracted results into scraped_data.csv
-→ Reads existing CSV data when reloading page
+- 1️⃣ Frontend UI
+- → Displays data and user controls using HTML/CSS/JS
+- 2️⃣ Flask Backend
+- → Handles /api/scrape, /api/data, /api/download routes
+- 3️⃣ Scraper Module (scraper.py)
+- → Sends HTTP requests and parses the HTML
+- → Extracts required fields
+- 4️⃣ Data Handler (data_handler.py)
+- → Saves extracted results into scraped_data.csv
+- → Reads existing CSV data when reloading page
 
 ---
 
@@ -133,9 +133,9 @@ WebScraperApp/<br>
 
 ## 🏁 Conclusion
 
-WebScraperApp encapsulates the essence of data automation, backend engineering, and frontend integration.<br>
-It bridges the gap between raw web content and structured, analyzable data — a core component of modern data intelligence systems.<br>
-This project exemplifies how small-scale automation can have large-scale impact in research, analytics, and digital operations.<br>
+- WebScraperApp encapsulates the essence of data automation, backend engineering, and frontend integration.<br>
+- It bridges the gap between raw web content and structured, analyzable data — a core component of modern data intelligence systems.<br>
+- This project exemplifies how small-scale automation can have large-scale impact in research, analytics, and digital operations.<br>
 
 ---
 
